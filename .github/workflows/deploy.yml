@@ -28,5 +28,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - run: npm ci
-      - run: npm run deploy
+      - run: npm run deploy -- --cname ${{ vars.CNAME }} -u ${{ vars.GH_USER }}
 
