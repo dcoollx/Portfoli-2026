@@ -29,8 +29,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Git User
         run: |
-          git config --global user.name ${{ secrets.GH_USER_NAME }}
-          git config --global user.email ${{ secrets.GH_USER_NAME }}
+          git config --global user.name bot
+          git config --global user.email dsqjr@msn.com
       - run: npm ci
       - run: npm run deploy
 
