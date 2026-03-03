@@ -10,19 +10,19 @@ export function Contact() {
     {
       icon: 'mail',
       label: 'Email',
-      value: 'alex.morgan@email.com',
-      href: 'mailto:alex.morgan@email.com',
+      value: 'dsqjr@msn.com',
+      href: 'mailto:dsqjr@msn.com',
     },
     {
       icon: 'linkedin',
       label: 'LinkedIn',
-      value: 'linkedin.com/in/alexmorgan',
+      value: 'linkedin.com/in/davidqueenjr',
       href: '#',
     },
     {
       icon: 'github',
       label: 'GitHub',
-      value: 'github.com/alexmorgan',
+      value: 'github.com/dcoollx',
       href: '#',
     },
   ];

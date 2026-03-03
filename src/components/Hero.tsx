@@ -55,7 +55,7 @@ export function Hero() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight text-indigo-700"
           >
-            David Queen
+            David Queen Jr.
           </motion.h1>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
