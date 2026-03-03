@@ -16,14 +16,14 @@ export function Contact() {
     {
       icon: 'linkedin',
       label: 'LinkedIn',
-      value: 'linkedin.com/in/davidqueenjr',
-      href: '#',
+      value: 'linkedin.com',
+      href: 'https://linkedin.com/in/davidqueenjr',
     },
     {
       icon: 'github',
       label: 'GitHub',
-      value: 'github.com/dcoollx',
-      href: '#',
+      value: 'github',
+      href: 'https://github.com/dcoollx',
     },
   ];
 
