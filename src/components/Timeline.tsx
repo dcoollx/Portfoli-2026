@@ -89,7 +89,7 @@ export function Timeline() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-indigo-700">Experience</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-[#4183c4]">Experience</h2>
           <div className="relative">
             <div className="absolute left-0 md:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-gray-300 via-gray-400 to-gray-300" />
 

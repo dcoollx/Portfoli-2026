@@ -45,7 +45,7 @@ export function Skills() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-indigo-700">Skills</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-[#4183c4]">Skills</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {skills.map((skillGroup, groupIndex) => (
               <motion.div

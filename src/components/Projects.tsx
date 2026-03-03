@@ -63,7 +63,7 @@ export function Projects() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-indigo-700">Featured Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-[#4183c4]">Featured Projects</h2>
           <div className="space-y-12">
             {projects.map((project, index) => (
               <motion.div

@@ -55,7 +55,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight text-indigo-700"
+            className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight  text-[#4183c4]"
           >
             David Queen Jr.
           </motion.h1>
@@ -63,7 +63,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-2xl md:text-3xl lg:text-4xl text-indigo-600/80 mb-8"
+            className="text-2xl md:text-3xl lg:text-4xl  text-[#4183c4] mb-8"
           >
             Software Engineer
           </motion.h2>

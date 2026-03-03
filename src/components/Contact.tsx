@@ -28,19 +28,19 @@ export function Contact() {
   ];
 
   return (
-    <section id="contact" className="min-h-screen flex items-center justify-center px-6 py-20">
+    <section id="contact" className="min-h-screen bg-gray-900 text-white flex items-center justify-center px-6 py-20">
       <div className="max-w-4xl w-full" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-indigo-700">Get In Touch</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-white">Get In Touch</h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-lg text-gray-600 mb-12 leading-relaxed"
+            className="text-lg mb-12 leading-relaxed"
           >
             I'm always open to discussing new projects, creative ideas, or opportunities
             to be part of your vision. Feel free to reach out!
@@ -55,7 +55,7 @@ export function Contact() {
                   animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
                   transition={{ delay: 0.3 + index * 0.1, duration: 0.6 }}
                   whileHover={{ x: 10 }}
-                  className="flex items-center gap-4 text-gray-600 hover:text-gray-900 transition-colors group"
+                  className="flex items-center gap-4 hover:text-gray-900 transition-colors group"
                 >
                   <Icon name={link.icon as 'github' | 'linkedin' | 'mail'} className="w-6 h-6" />
                   <span className="text-lg group-hover:underline">{link.value}</span>
