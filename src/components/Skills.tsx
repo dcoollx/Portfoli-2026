@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
+import { GlassCard } from './GlassCard';
 
 const skills = [
   {
@@ -38,6 +39,7 @@ export function Skills() {
       />
 
       <div className="max-w-4xl w-full" ref={ref}>
+        <GlassCard>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
@@ -74,6 +76,7 @@ export function Skills() {
             ))}
           </div>
         </motion.div>
+        </GlassCard>
       </div>
     </section>
   );

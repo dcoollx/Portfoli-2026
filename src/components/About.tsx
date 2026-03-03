@@ -1,5 +1,6 @@
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
+import { GlassCard } from './GlassCard';
 
 export function About() {
   const ref = useRef(null);
@@ -8,6 +9,7 @@ export function About() {
   return (
     <section id="about" className="min-h-screen flex items-center justify-center px-6 py-20">
       <div className="max-w-4xl w-full" ref={ref}>
+        <GlassCard>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
@@ -39,6 +41,7 @@ export function About() {
             </motion.p>
           </div>
         </motion.div>
+        </GlassCard>
       </div>
     </section>
   );
