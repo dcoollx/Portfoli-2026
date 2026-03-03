@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
-import { Icon } from 'semantic-ui-react';
+import { Icon, Menu } from 'semantic-ui-react';
 import { ChatBox } from './ChatBox';
+import { GlassCard } from './GlassCard';
 
 export function Hero() {
   const scrollToAbout = () => {
@@ -8,6 +9,7 @@ export function Hero() {
   };
 
   return (
+    
     <section className="min-h-screen flex items-center justify-center px-6 relative">
       {/* Floating background elements for passive movement */}
       <motion.div
@@ -34,7 +36,7 @@ export function Hero() {
         }}
         className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-br from-pink-100/30 to-orange-100/30 rounded-full blur-3xl"
       />
-
+<GlassCard>
       <div className="max-w-4xl w-full relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -76,9 +78,17 @@ export function Hero() {
           </motion.p>
 
           {/* AI Chatbox */}
-          <ChatBox />
+          <a href="https://github.com/dcoollx" target="_blank" rel="noopener noreferrer">
+            <Icon size="big" name="github" className="w-20 h-20 text-gray-400 mb-4" />
+            <span style={{ position: 'absolute', left: -2000 }}> opens in a new window</span>
+          </a>
+          <button title="Download My Resume" onClick={() => window.open('/resume.pdf', '_blank')}>
+            <Icon size="big" name="file alternate"></Icon>
+            <span style={{ position: 'absolute', left: -2000 }}> Downloads a file</span>
+          </button>
         </motion.div>
-      </div>
+      </div> 
+      </GlassCard>
       <motion.button
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -88,12 +98,13 @@ export function Hero() {
         aria-label="Scroll to about section"
       >
         <motion.div
-          animate={{ y: [0, 10, 0] }}
+          animate={{ y: [0, 10, 0],scale: [1, 0.8, 1] }}
           transition={{ repeat: Infinity, duration: 2 }}
         >
-          <Icon name="arrow down" className="w-6 h-6 text-gray-400" />
+          <Icon size="huge" name="arrow down" className="w-6 h-6 text-gray-400" />
         </motion.div>
       </motion.button>
     </section>
+   
   );
 }

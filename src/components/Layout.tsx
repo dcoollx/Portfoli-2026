@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'semantic-ui-react';
 import { Helmet} from 'react-helmet';
+import { Background } from './Background';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -17,7 +18,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => (
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"/>
   <link rel="manifest" href="/favicon/site.webmanifest"></link>
     </Helmet>
+    <Background>
     {children}
+    </Background>
     </Container>
 );
 
