@@ -15,7 +15,7 @@ export function About() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-indigo-700">About Me</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-[#4183c4]">About Me</h2>
           <div className="space-y-6 text-gray-600 leading-relaxed">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
