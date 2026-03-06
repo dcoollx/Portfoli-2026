@@ -95,10 +95,17 @@ export function Hero() {
             <Icon size="big" name="file alternate"></Icon>
             <span style={{ position: 'absolute', left: -2000 }}> Downloads a file</span>
           </motion.button>
-           <a title="David Queen's LinkedIn Profile" href='https://linkedin.com/in/davidqueenjr' target="_blank" rel="noopener noreferrer">
+           <motion.a 
+           title="David Queen's LinkedIn Profile" 
+           href='https://linkedin.com/in/davidqueenjr' 
+           target="_blank" rel="noopener noreferrer"
+            whileHover={{ scale: 1.2, rotate: 5 }}
+            whileTap={{ scale: 0.9, rotate: -5 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+           >
             <Icon size="big" name="linkedin"></Icon>
             <span style={{ position: 'absolute', left: -2000 }}> opens in a new window</span>
-          </a>
+          </motion.a>
         </motion.div>
       </div> 
       </GlassCard>
