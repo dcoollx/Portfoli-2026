@@ -8,10 +8,10 @@ const experiences = [
     company: 'Audioeye',
     dates: 'Jan 2024 - Feb 2026',
     details: [
-      'Lead a team of 5 developers in building scalable microservices architecture',
-      'Reduced application load time by 40% through performance optimization',
+      'Lead a team of 3 developers in building an integration with our CRM, to handle transactional emails',
+      'Reduced new user onboarding time by 30% through implementing a user invitation system',
       'Mentor junior developers and conduct code reviews',
-      'Architected and implemented real-time data synchronization system',
+      'Creaated CAPA process for production incidents, reducing resolution time by 25%',
     ],
   },
   {
@@ -19,18 +19,18 @@ const experiences = [
     company: 'Audioeye',
     dates: 'Jan 2022 - Jan 2024',
     details: [
-      'Developed and maintained full-stack web applications using React and Node.js',
-      'Collaborated with UX team to redesign main product interface',
-      'Implemented automated testing suite, increasing code coverage to 85%',
+      'Developed and maintained self hosted chrome extension for accessibility testing',
+      'Collaborated with UX team to intergrate new deign libraries',
       'Built RESTful APIs serving 50k+ daily active users',
+      'Assisted in development of customer-facing web portal',
     ],
   },
   {
-    position: 'Junior Software Engineer',
+    position: ' Junior Software Engineer',
     company: 'Audioeye',
     dates: 'May 2021 - Jan 2022',
     details: [
-      'Built responsive web applications using modern JavaScript frameworks',
+      'Built responsive web applications using modern JavaScript frameworks Gatsby and NestJS',
       'Participated in agile development process and daily standups',
       'Fixed bugs and implemented new features based on user feedback',
       'Contributed to internal documentation and knowledge sharing',
@@ -41,21 +41,21 @@ const experiences = [
     company: 'Audioeye',
     dates: 'Jan 2021 - May 2021',
     details: [
-      'Built responsive web applications using modern JavaScript frameworks',
+      'Implemented automated testing suite, increasing code coverage to 85%',
       'Participated in agile development process and daily standups',
       'Fixed bugs and implemented new features based on user feedback',
       'Contributed to internal documentation and knowledge sharing',
     ],
   },
   {
-    position: 'Junior Implementation Developer',
+    position: 'Accessibility Implementation Developer',
     company: 'Audioeye',
     dates: 'Jan 2020 - Jan 2021',
     details: [
-      'Assisted in development of customer-facing web portal',
-      'Learned best practices for version control and collaborative development',
-      'Participated in code reviews and team meetings',
-      'Developed small features and bug fixes under mentorship',
+      
+      'Brought more than 65 client sites into compliance with WCAG 2.1 standards, improving accessibility for millions of users',
+      'Created custom accessibility solutions for clients with unique needs, such as e-commerce sites and government agencies',
+      'Developed custom tooling to automate accessibility audits, reducing manual testing time by 40%',
     ],
   },
 ];

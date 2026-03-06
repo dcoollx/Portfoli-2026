@@ -79,13 +79,17 @@ export function Hero() {
 
           {/* AI Chatbox */}
           <a href="https://github.com/dcoollx" target="_blank" rel="noopener noreferrer">
-            <Icon size="big" name="github" className="w-20 h-20 text-gray-400 mb-4" />
+            <Icon size="big" title="Check out my GitHub profile" name="github" className="w-20 h-20 text-gray-400 mb-4" />
             <span style={{ position: 'absolute', left: -2000 }}> opens in a new window</span>
           </a>
           <button title="Download My Resume" onClick={() => window.open('/resume.pdf', '_blank')}>
             <Icon size="big" name="file alternate"></Icon>
             <span style={{ position: 'absolute', left: -2000 }}> Downloads a file</span>
           </button>
+          <a title="David Queen's LinkedIn Profile" href='https://linkedin.com/in/davidqueenjr' target="_blank" rel="noopener noreferrer">
+            <Icon size="big" name="linkedin"></Icon>
+            <span style={{ position: 'absolute', left: -2000 }}> opens in a new window</span>
+          </a>
         </motion.div>
       </div> 
       </GlassCard>
