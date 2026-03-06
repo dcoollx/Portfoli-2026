@@ -127,7 +127,10 @@ const A11yButton: React.FC = () => {
                 </div>
             </Modal.Content>
         </Modal>
-        <motion.div>
+        <motion.div
+            whileHover={{ scale: 1.2, rotate: 5 }}
+            whileTap={{ scale: 0.9, rotate: -5 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 10 }}>
             <Icon onClick={() => setIsOpen(true)} role="button" tabIndex={0} aria-label="Open accessibility tools" name="universal access" circular color="blue"  size="big" content="Accessibility Tools" />
         </motion.div>
         </motion.div>
