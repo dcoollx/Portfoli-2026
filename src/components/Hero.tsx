@@ -92,7 +92,7 @@ export function Hero() {
           whileTap={{ scale: 0.9, rotate: -5 }}
           transition={{ type: 'spring', stiffness: 400, damping: 10 }}
           title="Download My Resume" onClick={() => window.open('/resume.pdf', '_blank')}>
-            <Icon size="big" name="file alternate"></Icon>
+            <Icon size="big" color='grey' name="file alternate"></Icon>
             <span style={{ position: 'absolute', left: -2000 }}> Downloads a file</span>
           </motion.button>
            <motion.a 

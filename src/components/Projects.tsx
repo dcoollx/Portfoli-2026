@@ -37,8 +37,8 @@ const projects: Projects[] = [
     details: 'Features include real-time collaboration, customizable workflows, and comprehensive team performance metrics.',
   },
   {
-    title: 'ADDRESS Lookup',
-    description: 'A Cli tool for finding all residential addresses with a polygon, web based tool using Bubble.ai',
+    title: 'Address Lookup',
+    description: 'A Cli tool for finding all residential addresses with a polygon, web based tool using Bubble.ai (WIP)',
     image: 'https://plus.unsplash.com/premium_photo-1723651354432-7796fb4ecebc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGluJTIwb24lMjBtYXB8ZW58MHx8MHx8fDA%3D',
     technologies: ['Bubble.ai', 'OpenStreetMap API', 'Web workers'],
     github: 'https://github.com/dcoollx/NW_address_lookup',
