@@ -2,6 +2,9 @@
 
 :root {
   --font-size: 16px;
+  --font-size-multiplier: 1;
+  --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --invert-colors: none;
   --background: #ffffff;
   --foreground: oklch(0.145 0 0);
   --card: #ffffff;
@@ -200,4 +203,20 @@
     font-weight: var(--font-weight-normal);
     line-height: 1.5;
   }
+}
+
+/* Accessibility Styles - High specificity to override theme styles */
+html.a11y-active {
+  font-size: calc(var(--font-size) * var(--font-size-multiplier)) !important;
+  font-family: var(--font-family) !important;
+  filter: var(--invert-colors) !important;
+}
+
+body.a11y-active {
+  font-family: var(--font-family) !important;
+  font-size: calc(var(--font-size) * var(--font-size-multiplier)) !important;
+}
+
+.a11y-active * {
+  font-family: var(--font-family) !important;
 }

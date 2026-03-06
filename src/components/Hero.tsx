@@ -78,18 +78,34 @@ export function Hero() {
           </motion.p>
 
           {/* AI Chatbox */}
-          <a href="https://github.com/dcoollx" target="_blank" rel="noopener noreferrer">
-            <Icon size="big" title="Check out my GitHub profile" name="github" className="w-20 h-20 text-gray-400 mb-4" />
+          <motion.a 
+          whileHover={{ scale: 1.2, rotate: 5 }}
+          whileTap={{ scale: 0.9, rotate: -5 }}
+           title="Check out my GitHub profile"
+          transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+          href="https://github.com/dcoollx" target="_blank" rel="noopener noreferrer">
+            <Icon size="big" name="github" className="w-20 h-20 text-gray-400 mb-4" />
             <span style={{ position: 'absolute', left: -2000 }}> opens in a new window</span>
-          </a>
-          <button title="Download My Resume" onClick={() => window.open('/resume.pdf', '_blank')}>
+          </motion.a>
+          <motion.button 
+          whileHover={{ scale: 1.2, rotate: 5 }}
+          whileTap={{ scale: 0.9, rotate: -5 }}
+          transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+          title="Download My Resume" onClick={() => window.open('/resume.pdf', '_blank')}>
             <Icon size="big" name="file alternate"></Icon>
             <span style={{ position: 'absolute', left: -2000 }}> Downloads a file</span>
-          </button>
-          <a title="David Queen's LinkedIn Profile" href='https://linkedin.com/in/davidqueenjr' target="_blank" rel="noopener noreferrer">
+          </motion.button>
+           <motion.a 
+           title="David Queen's LinkedIn Profile" 
+           href='https://linkedin.com/in/davidqueenjr' 
+           target="_blank" rel="noopener noreferrer"
+            whileHover={{ scale: 1.2, rotate: 5 }}
+            whileTap={{ scale: 0.9, rotate: -5 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+           >
             <Icon size="big" name="linkedin"></Icon>
             <span style={{ position: 'absolute', left: -2000 }}> opens in a new window</span>
-          </a>
+          </motion.a>
         </motion.div>
       </div> 
       </GlassCard>
