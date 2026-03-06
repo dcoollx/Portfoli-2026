@@ -6,15 +6,15 @@ import { GlassCard } from './GlassCard';
 const skills = [
   {
     category: 'Frontend',
-    items: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js'],
+    items: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'HTML5', 'i18n', 'a11y'],
   },
   {
     category: 'Backend',
-    items: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'REST APIs'],
+    items: ['Node.js', 'Python', 'PostgreSQL', 'Express.js', 'REST APIs', 'NestJS'],
   },
   {
     category: 'Tools & Others',
-    items: ['Git', 'Docker', 'AWS', 'CI/CD', 'Agile/Scrum'],
+    items: ['Git', 'Docker', 'AWS', 'CI/CD', 'Agile/Scrum', 'AI'],
   },
 ];
 
