@@ -23,7 +23,7 @@ export function Skills() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20 relative">
+    <section id="skills" className="min-h-screen flex items-center justify-center px-6 py-20 relative">
       {/* Passive floating element */}
       <motion.div
         animate={{
