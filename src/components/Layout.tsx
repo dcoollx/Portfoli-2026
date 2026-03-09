@@ -8,7 +8,7 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => (
-  <Container style={{ marginTop: '2em', width: '100%' }} >
+  < >
     <Helmet>
       <title>David Queen Jr - Software Engineer</title>
       <meta name="description" content="David Queen Jr's portfolio showcasing software engineering projects, skills, and experience." />
@@ -21,7 +21,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => (
     <Background>
     {children}
     </Background>
-    </Container>
+    </>
 );
 
 export default Layout;
