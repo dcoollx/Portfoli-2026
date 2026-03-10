@@ -28,33 +28,33 @@ const A11yButton: React.FC = () => {
         
         switch (fontSize) {
             case 'large':
-                html.style.setProperty('--font-size-multiplier', '1.2');
+                html.style.setProperty('font-size', 'x-large');
                 break;
             case 'extra-large':
-                html.style.setProperty('--font-size-multiplier', '1.5');
+                html.style.setProperty('font-size', 'xx-large');
                 break;
             default:
-                html.style.removeProperty('--font-size-multiplier');
+                html.style.removeProperty('font-size');
         }
 
         // Apply font family
         html.style.removeProperty('--font-family');
         switch (fontFamily) {
             case 'dyslexic':
-                html.style.setProperty('--font-family', '"OpenDyslexic", "Open Dyslexic", sans-serif');
+                html.style.setProperty('font-family', 'OpenDyslexic, sans-serif');
                 break;
             case 'monospace':
-                html.style.setProperty('--font-family', '"Courier New", monospace');
+                html.style.setProperty('font-family', '"Courier New", monospace');
                 break;
             default:
-                html.style.setProperty('--font-family', '"Plus Jakarta Sans", system-ui, -apple-system, sans-serif');
+                html.style.setProperty('font-family', '"Plus Jakarta Sans", system-ui, -apple-system, sans-serif');
         }
 
         // Apply color inversion
         if (invertColors) {
-            html.style.setProperty('--invert-colors', 'invert(1)');
+            html.className = "filter invert"
         } else {
-            html.style.removeProperty('--invert-colors');
+            html.className = ""
         }
 
         // Add/remove active class based on whether any accessibility features are enabled
@@ -120,7 +120,7 @@ const A11yButton: React.FC = () => {
                         onClick={() => setInvertColors(!invertColors)}
                     >
                         <Icon name={invertColors ? 'check square outline' : 'square outline'} />
-                        Invert Colors
+                        High Contrast Mode
                     </MenuItem>
                 </Menu>
                 <div style={{ marginTop: '20px', textAlign: 'center' }}>
