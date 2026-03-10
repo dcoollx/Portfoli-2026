@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Hero component renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="min-h-screen flex items-center justify-center px-6 relative"
+  >
+    <div
+      class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-purple-100/30 to-blue-100/30 rounded-full blur-3xl"
+    />
+    <div
+      class="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-br from-pink-100/30 to-orange-100/30 rounded-full blur-3xl"
+    />
+    <div
+      class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-sm p-6 border border-white border-opacity-30"
+      style="padding: 55px;"
+    >
+      <div
+        class="max-w-4xl w-full relative z-10"
+      >
+        <div>
+          <p
+            class="text-gray-600 mb-4"
+          >
+            Hi, I'm
+          </p>
+          <h1
+            class="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight  text-[#4183c4]"
+          >
+            David Queen Jr.
+          </h1>
+          <h2
+            class="text-2xl md:text-3xl lg:text-4xl  text-[#4183c4] mb-8"
+          >
+            Software Engineer
+          </h2>
+          <p
+            class="text-lg md:text-xl text-gray-500 max-w-2xl leading-relaxed mb-12"
+          >
+            I craft elegant solutions to complex problems, specializing in full-stack development with a passion for creating seamless user experiences.
+          </p>
+          <a
+            href="https://github.com/dcoollx"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Check out my GitHub profile"
+          >
+            <i
+              aria-hidden="true"
+              class="github big icon w-20 h-20 text-gray-400 mb-4"
+            />
+            <span
+              style="position: absolute; left: -2000px;"
+            >
+               opens in a new window
+            </span>
+          </a>
+          <button
+            title="Download My Resume"
+          >
+            <i
+              aria-hidden="true"
+              class="grey file alternate big icon"
+            />
+            <span
+              style="position: absolute; left: -2000px;"
+            >
+               Downloads a file
+            </span>
+          </button>
+          <a
+            href="https://linkedin.com/in/davidqueenjr"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="David Queen's LinkedIn Profile"
+          >
+            <i
+              aria-hidden="true"
+              class="linkedin big icon"
+            />
+            <span
+              style="position: absolute; left: -2000px;"
+            >
+               opens in a new window
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <button
+      aria-label="Scroll to about section"
+      class="absolute bottom-12 left-1/2 -translate-x-1/2"
+    >
+      <div>
+        <i
+          aria-hidden="true"
+          class="arrow down huge icon w-6 h-6 text-gray-400"
+        />
+      </div>
+    </button>
+  </section>
+</DocumentFragment>
+`;
