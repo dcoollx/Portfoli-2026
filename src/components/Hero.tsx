@@ -4,6 +4,7 @@ import { GlassCard } from './GlassCard';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import DescriptionIcon from '@mui/icons-material/Description';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 export function Hero() {
   const scrollToAbout = () => {
@@ -86,8 +87,8 @@ export function Hero() {
            title="Check out my GitHub profile"
           transition={{ type: 'spring', stiffness: 400, damping: 10 }}
           href="https://github.com/dcoollx" target="_blank" rel="noopener noreferrer">
-            <GitHubIcon className="w-20 h-20 text-gray-400 mb-4" fontSize="inherit" />
-            <span style={{ position: 'absolute', left: -2000 }}> opens in a new window</span>
+            <GitHubIcon  className="w-20 h-20 text-gray-400"  />
+            <span className='sr-only' style={{ position: 'absolute', left: -2000 }}> opens in a new window</span>
           </motion.a>
           <motion.button 
           whileHover={{ scale: 1.2, rotate: 5 }}
@@ -120,10 +121,11 @@ export function Hero() {
         aria-label="Scroll to about section"
       >
         <motion.div
+        title="continue to rest of Portfolio"
           animate={{ y: [0, 10, 0],scale: [1, 0.8, 1] }}
           transition={{ repeat: Infinity, duration: 2 }}
         >
-          <Icon size="huge" name="arrow down" className="w-6 h-6 text-gray-400" />
+          <ArrowDownwardIcon fontSize="large" className="w-6 h-6 text-gray-400" />
         </motion.div>
       </motion.button>
     </section>
