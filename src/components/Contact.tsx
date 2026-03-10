@@ -1,6 +1,8 @@
 import { motion, useInView } from 'motion/react';
-import { Icon } from 'semantic-ui-react';
 import { useRef } from 'react';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export function Contact() {
   const ref = useRef(null);
@@ -57,7 +59,9 @@ export function Contact() {
                   whileHover={{ x: 10 }}
                   className="flex items-center gap-4 hover:text-gray-900 transition-colors group"
                 >
-                  <Icon name={link.icon as 'github' | 'linkedin' | 'mail'} className="w-6 h-6" />
+                  {link.icon === 'mail' && <MailOutlineIcon className="w-6 h-6" />}
+                  {link.icon === 'linkedin' && <LinkedInIcon className="w-6 h-6" />}
+                  {link.icon === 'github' && <GitHubIcon className="w-6 h-6" />}
                   <span className="text-lg group-hover:underline">{link.value}</span>
                 </motion.a>
               );
