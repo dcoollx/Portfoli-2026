@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`A11y component matches snapshot with opened modal 1`] = `
+<DocumentFragment>
+  <div
+    style="position: fixed; bottom: 10px; left: 10px; padding: 10px; z-index: 1000;"
+  >
+    <div>
+      <i
+        aria-label="Open accessibility tools"
+        class="blue universal access big circular icon"
+        content="Accessibility Tools"
+        role="button"
+        tabindex="0"
+      />
+    </div>
+  </div>
+  <div
+    class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-sm p-6 border border-white border-opacity-30"
+    style="padding: 10px; position: fixed; bottom: 10px; right: 10px; z-index: 1000;"
+  >
+    <button>
+      Back to Top
+    </button>
+  </div>
+</DocumentFragment>
+`;
