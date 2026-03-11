@@ -1,4 +1,5 @@
 import { DetailedHTMLProps, HTMLAttributes, useCallback, useEffect, useState } from "react";
+import { Canvas } from "./canvas/canvas";
 
 
 export const Background: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -37,6 +38,7 @@ export const Background: React.FC<{ children: React.ReactNode }> = ({ children }
              
     return (
         <div style={{ ...style }}> 
+        <Canvas/>
             {children}
         </div>
     );
