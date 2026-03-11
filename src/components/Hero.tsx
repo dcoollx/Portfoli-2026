@@ -1,7 +1,10 @@
 import { motion } from 'motion/react';
-import { Icon, Menu } from 'semantic-ui-react';
 import { ChatBox } from './ChatBox';
 import { GlassCard } from './GlassCard';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import DescriptionIcon from '@mui/icons-material/Description';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 export function Hero() {
   const scrollToAbout = () => {
@@ -84,15 +87,15 @@ export function Hero() {
            title="Check out my GitHub profile"
           transition={{ type: 'spring', stiffness: 400, damping: 10 }}
           href="https://github.com/dcoollx" target="_blank" rel="noopener noreferrer">
-            <Icon size="big" name="github" className="w-20 h-20 text-gray-400 mb-4" />
-            <span style={{ position: 'absolute', left: -2000 }}> opens in a new window</span>
+            <GitHubIcon  className="w-20 h-20 text-gray-400"  />
+            <span className='sr-only' style={{ position: 'absolute', left: -2000 }}> opens in a new window</span>
           </motion.a>
           <motion.button 
           whileHover={{ scale: 1.2, rotate: 5 }}
           whileTap={{ scale: 0.9, rotate: -5 }}
           transition={{ type: 'spring', stiffness: 400, damping: 10 }}
           title="Download My Resume" onClick={() => window.open('/resume.pdf', '_blank')}>
-            <Icon size="big" color='grey' name="file alternate"></Icon>
+            <DescriptionIcon className="w-8 h-8 text-gray-500" />
             <span style={{ position: 'absolute', left: -2000 }}> Downloads a file</span>
           </motion.button>
            <motion.a 
@@ -103,7 +106,7 @@ export function Hero() {
             whileTap={{ scale: 0.9, rotate: -5 }}
             transition={{ type: 'spring', stiffness: 400, damping: 10 }}
            >
-            <Icon size="big" name="linkedin"></Icon>
+            <LinkedInIcon className="w-8 h-8" />
             <span style={{ position: 'absolute', left: -2000 }}> opens in a new window</span>
           </motion.a>
         </motion.div>
@@ -118,10 +121,11 @@ export function Hero() {
         aria-label="Scroll to about section"
       >
         <motion.div
+        title="continue to rest of Portfolio"
           animate={{ y: [0, 10, 0],scale: [1, 0.8, 1] }}
           transition={{ repeat: Infinity, duration: 2 }}
         >
-          <Icon size="huge" name="arrow down" className="w-6 h-6 text-gray-400" />
+          <ArrowDownwardIcon fontSize="large" className="w-6 h-6 text-gray-400" />
         </motion.div>
       </motion.button>
     </section>

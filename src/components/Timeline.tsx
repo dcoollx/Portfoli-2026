@@ -1,6 +1,7 @@
 import { motion, useInView } from 'motion/react';
 import { useRef, useState } from 'react';
-import { Icon, Divider } from 'semantic-ui-react'
+import { Divider } from '@mui/material';
+import WorkIcon from '@mui/icons-material/Work';
 
 const experiences = [
   {
@@ -130,7 +131,7 @@ export function Timeline() {
                         transition={{ duration: 0.6 }}
                         className="p-3 bg-gray-100 rounded-lg"
                       >
-                        <Icon name="briefcase" className="w-5 h-5 text-gray-700" />
+                        <WorkIcon className="w-5 h-5 text-gray-700" />
                       </motion.div>
 
                       <div className="flex-1">
@@ -138,7 +139,6 @@ export function Timeline() {
                         <p className="text-gray-600 mb-2">{exp.company}</p>
                         <p className="text-sm text-gray-500 mb-4">{exp.dates}</p>
 
-                        {/* Expandable details */}
                         <motion.div
                           initial={{ height: 0, opacity: 0 }}
                           animate={{
