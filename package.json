@@ -37,6 +37,7 @@
     "autoprefixer": "^10.4.0",
     "gh-pages": "^6.3.0",
     "identity-obj-proxy": "^3.0.0",
+    "indent-string": "^5.0.0",
     "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.3.0",
     "postcss": "^8.4.0",

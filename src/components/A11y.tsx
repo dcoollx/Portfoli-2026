@@ -83,9 +83,9 @@ const A11yButton: React.FC = () => {
   return (
     <motion.div style={{ position: 'fixed', bottom: 10, left: 10, padding: '10px', zIndex: 1000 }}>
       <Dialog open={isOpen} onClose={() => setIsOpen(false)} aria-labelledby="a11y-modal-header">
-        <DialogTitle id="a11y-modal-header" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <DialogTitle data-testid="a11y-modal-header" id="a11y-modal-header" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           Accessibility Tools
-          <IconButton onClick={() => setIsOpen(false)}>
+          <IconButton onClick={() => setIsOpen(false)} aria-label="Close accessibility tools">
             <CloseIcon />
           </IconButton>
         </DialogTitle>
