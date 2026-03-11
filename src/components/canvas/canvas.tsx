@@ -15,8 +15,8 @@ export const Canvas = () => {
             setDemension({width: window.innerWidth, height: window.innerHeight})
         })
         shapes.forEach(s=>{
-            s.current?.setAttr('xvelocity', 1)
-            s.current?.setAttr('yvelocity', 1)
+            s.current?.setAttr('xvelocity', Math.random()) // so that each triangle can manage its own speed, set it as an attribut on the object
+            s.current?.setAttr('yvelocity', Math.random())
             s.current?.x( Math.random() * width)
             s.current?.y( Math.random() * height)
             s.current?.radius(Math.random() * 100)
@@ -24,7 +24,7 @@ export const Canvas = () => {
             s.current?.opacity(Math.random());
     })
         //const velecity = 1 as const
-        const anim = new Konva.Animation((frame)=>{
+        const anim = new Konva.Animation((frame)=>{ // the animation, this fires every frame
             const time = frame.time;
             const delta = frame.timeDiff;
             const frameRate = frame.frameRate;
@@ -33,19 +33,11 @@ export const Canvas = () => {
                 if(!s) return;
                 const shape = s.current!;
                 const currentPos = shape.getPosition()
-                if(currentPos.x > width){
-                    shape.setAttr('xvelocity', -1)
-                }
-                if(currentPos.y > height) shape.setAttr('yvelocity', -1)
-                if(currentPos.x < 0){
-                    shape.setAttr('xvelocity', 1)
-                }
-                if(currentPos.y < 0) shape.setAttr('yvelocity', 1)
+                if(currentPos.x > width || currentPos.x < 0) shape.setAttr('xvelocity', -1 * Number(shape.getAttr('xvelocity')))
+                if(currentPos.y > height || currentPos.y < 0) shape.setAttr('yvelocity', -1 * Number(shape.getAttr('yvelocity')))
 
                 const xvelocity = Number(s.current?.getAttr('xvelocity'))
                 const yvelocity = Number(s.current?.getAttr('yvelocity'))  
-                
-                
                 
                 shape.x(currentPos.x + xvelocity);
                 shape.y(currentPos.y + yvelocity)
@@ -63,7 +55,7 @@ export const Canvas = () => {
         <Stage style={{ position: 'absolute'}} width={width} height={height}>
             <Layer>
             {Array.from({ length: numberOfShapes }).map((v, i)=>(
-                <RegularPolygon cornerRadius={10} data-velecity={1} ref={shapes[i]} key={i} sides={3} stroke="blue" fill="blue" radius={100}/>
+                <RegularPolygon cornerRadius={10} data-velecity={1} ref={shapes[i]} key={i} sides={3}  fill="#4183c4" radius={100}/>
             ))}
             </Layer>
         </Stage>
