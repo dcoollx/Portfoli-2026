@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { useState } from 'react';
-import { Icon } from 'semantic-ui-react'
+import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
+import IndeterminateCheckBoxOutlinedIcon from '@mui/icons-material/IndeterminateCheckBoxOutlined';
 
 const mockMessages = [
   {
@@ -71,9 +72,9 @@ export const ChatBox = () => {
               aria-label={isExpanded ? 'Minimize' : 'Expand'}
             >
               {isExpanded ? (
-                <Icon name="minus square outline" className="w-4 h-4" />
+                <IndeterminateCheckBoxOutlinedIcon className="w-4 h-4" />
               ) : (
-                <Icon name="plus square outline" className="w-4 h-4" />
+                <AddBoxOutlinedIcon className="w-4 h-4" />
               )}
             </motion.button>
           </div>

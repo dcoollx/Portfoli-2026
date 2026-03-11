@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { useState, useEffect } from 'react';
-import { Icon } from 'semantic-ui-react';
+import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const navItems = [
   { label: 'About', href: '#about' },
@@ -74,7 +75,7 @@ export function Navigation() {
               className="md:hidden text-gray-600"
               aria-label="Toggle menu"
             >
-              {isMobileMenuOpen ? <Icon name="x" className="w-6 h-6" /> : <Icon name="bars" className="w-6 h-6" />}
+              {isMobileMenuOpen ? <CloseIcon className="w-6 h-6" /> : <MenuIcon className="w-6 h-6" />}
             </button>
           </div>
         </div>
