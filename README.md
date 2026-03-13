@@ -1,12 +1,13 @@
-# Vite React Semantic-UI Starter
+# David Queen Jr.
 
-This repository contains a minimal boilerplate for a React web application built with Vite and using Semantic UI React as the component library. The project is written in TypeScript.
+Welcome To My Portfolio.
 
 ## Features
 
 - Vite development and build tooling
-- React 18 with TypeScript
-- Semantic UI React components with CSS
+- React 19 with TypeScript
+- Animations using motion.dev
+- 
 
 ## Getting Started
 
@@ -25,13 +26,16 @@ This repository contains a minimal boilerplate for a React web application built
    npm run build
    npm run preview
    ```
+## Deployment
+
+This repo is auto deployed using github pages and github actions. To update the main site simply merge into main using a PR.
 
 ## Project Structure
 
 ```
 src/
   components/
-    Layout.tsx
+    ...
   App.tsx
   main.tsx
 index.html
