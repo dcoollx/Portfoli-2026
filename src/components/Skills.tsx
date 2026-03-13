@@ -3,10 +3,15 @@ import { useInView } from 'motion/react';
 import { useRef } from 'react';
 import { GlassCard } from './GlassCard';
 
-const skills = [
+export interface skill {
+  category: string;
+  items: string[]; 
+}
+
+const skills: skill[] = [
   {
     category: 'Frontend',
-    items: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'HTML5', 'i18n', 'a11y'],
+    items: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'HTML5', 'I18n', 'A11y'],
   },
   {
     category: 'Backend',
@@ -18,26 +23,13 @@ const skills = [
   },
 ];
 
-export function Skills() {
+
+export const Skills: React.FC<{ skills: skill[] }> = ({ skills }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <section id="skills" className="min-h-screen flex items-center justify-center px-6 py-20 relative">
-      {/* Passive floating element */}
-      <motion.div
-        animate={{
-          y: [0, -15, 0],
-          rotate: [0, 5, 0],
-        }}
-        transition={{
-          duration: 7,
-          repeat: Infinity,
-          ease: 'easeInOut',
-        }}
-        className="absolute top-40 right-20 w-64 h-64 bg-gradient-to-br from-cyan-100/20 to-teal-100/20 rounded-full blur-3xl pointer-events-none"
-      />
-
       <div className="max-w-4xl w-full" ref={ref}>
         <GlassCard>
         <motion.div

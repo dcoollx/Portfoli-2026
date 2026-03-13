@@ -106,7 +106,7 @@ export function Hero() {
             whileTap={{ scale: 0.9, rotate: -5 }}
             transition={{ type: 'spring', stiffness: 400, damping: 10 }}
            >
-            <LinkedInIcon className="w-8 h-8" />
+            <LinkedInIcon color="primary" className="w-8 h-8" />
             <span style={{ position: 'absolute', left: -2000 }}> opens in a new window</span>
           </motion.a>
         </motion.div>
