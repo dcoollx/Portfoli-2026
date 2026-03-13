@@ -91,7 +91,7 @@ exports[`Hero component renders correctly and matches snapshot 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium w-8 h-8 css-i4bv87-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium w-8 h-8 css-ci5apu-MuiSvgIcon-root"
               data-testid="LinkedInIcon"
               focusable="false"
               viewBox="0 0 24 24"
