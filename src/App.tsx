@@ -8,6 +8,7 @@ import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import Layout from './components/Layout';
 import { A11y } from './components/A11y';
+import { skills } from './data/skills';
 
 export const App: React.FC = () => 
 (
@@ -21,7 +22,7 @@ export const App: React.FC = () =>
         <main id="main-content">
           <Hero />
           <About />
-          <Skills />
+          <Skills skills={skills} />
           <Timeline />
           <Projects />
           <Contact />
