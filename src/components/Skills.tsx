@@ -5,7 +5,7 @@ import { GlassCard } from './GlassCard';
 import type { skill } from '../data/skills';
 
 
-export const Skills: React.FC<{ skills: skill[] }> = ({ skills }) => {
+export const Skills: React.FC<{ skills?: skill[] }> = ({ additionalSkills }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
