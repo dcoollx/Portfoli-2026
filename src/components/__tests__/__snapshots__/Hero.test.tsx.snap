@@ -106,6 +106,33 @@ exports[`Hero component renders correctly and matches snapshot 1`] = `
                opens in a new window
             </span>
           </a>
+          <a
+            href="mailto:hiredavidqueenjr@gmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Send David An Email"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium w-8 h-8 css-ci5apu-MuiSvgIcon-root"
+              data-testid="EmailTwoToneIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m20 8-8 5-8-5v10h16zm0-2H4l8 4.99z"
+                opacity=".3"
+              />
+              <path
+                d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2M20 6l-8 4.99L4 6zM4 8l8 5 8-5v10H4z"
+              />
+            </svg>
+            <span
+              style="position: absolute; left: -2000px;"
+            >
+               opens in a new window
+            </span>
+          </a>
         </div>
       </div>
     </div>
