@@ -2,26 +2,7 @@ import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
 import { GlassCard } from './GlassCard';
-
-export interface skill {
-  category: string;
-  items: string[]; 
-}
-
-const skills: skill[] = [
-  {
-    category: 'Frontend',
-    items: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'HTML5', 'I18n', 'A11y'],
-  },
-  {
-    category: 'Backend',
-    items: ['Node.js', 'Python', 'PostgreSQL', 'Express.js', 'REST APIs', 'NestJS'],
-  },
-  {
-    category: 'Tools & Others',
-    items: ['Git', 'Docker', 'AWS', 'CI/CD', 'Agile/Scrum', 'AI'],
-  },
-];
+import type { skill } from '../data/skills';
 
 
 export const Skills: React.FC<{ skills?: skill[] }> = ({ additionalSkills }) => {

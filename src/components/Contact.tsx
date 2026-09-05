@@ -12,8 +12,8 @@ export function Contact() {
     {
       icon: 'mail',
       label: 'Email',
-      value: 'dsqjr@msn.com',
-      href: 'mailto:dsqjr@msn.com',
+      value: 'hiredavidqueenjr@gmail.com',
+      href: 'mailto:hiredavidqueenjr@gmail.com',
     },
     {
       icon: 'linkedin',

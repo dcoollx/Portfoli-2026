@@ -3,6 +3,7 @@ import { ChatBox } from './ChatBox';
 import { GlassCard } from './GlassCard';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import DescriptionIcon from '@mui/icons-material/Description';
+import EmailIcon from '@mui/icons-material/EmailTwoTone'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
@@ -107,6 +108,17 @@ export function Hero() {
             transition={{ type: 'spring', stiffness: 400, damping: 10 }}
            >
             <LinkedInIcon color="primary" className="w-8 h-8" />
+            <span style={{ position: 'absolute', left: -2000 }}> opens in a new window</span>
+          </motion.a>
+          <motion.a 
+           title="Send David An Email" 
+           href='mailto:hiredavidqueenjr@gmail.com' 
+           target="_blank" rel="noopener noreferrer"
+            whileHover={{ scale: 1.2, rotate: 5 }}
+            whileTap={{ scale: 0.9, rotate: -5 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+           >
+            <EmailIcon color="primary" className="w-8 h-8" />
             <span style={{ position: 'absolute', left: -2000 }}> opens in a new window</span>
           </motion.a>
         </motion.div>

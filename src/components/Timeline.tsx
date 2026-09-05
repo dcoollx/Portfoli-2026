@@ -5,6 +5,14 @@ import WorkIcon from '@mui/icons-material/Work';
 
 const experiences = [
   {
+    position: 'Forward Deployed Engineer',
+    company: 'Openlaunchworks',
+    dates: 'Feb 2026 - Present',
+    details: [
+      'Developed and deployed a custom cloud based platform for clients, Intregrating with multiple third-party APIs to streamline business operations',
+    ],
+  },
+  {
     position: 'Software Engineer L4',
     company: 'Audioeye',
     dates: 'Jan 2024 - Feb 2026',
