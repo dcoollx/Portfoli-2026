@@ -5,7 +5,10 @@ import { GlassCard } from './GlassCard';
 import type { skill } from '../data/skills';
 
 
-export const Skills: React.FC<{ skills?: skill[] }> = ({ additionalSkills }) => {
+export const Skills: React.FC<{ skills?: skill[] }> = ({ skills }) => {
+  if (!skills || skills.length === 0) {
+    return null; // Return null if skills prop is not provided or is empty
+  }
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
