@@ -23,7 +23,7 @@ export function About() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="text-lg"
             >
-              I'm a mid-level software engineer with 6+ years of experience building web
+              I'm an skilled software engineer with 6+ years of experience building web
               applications that users love. My journey in tech started with a curiosity
               about how things work, and has evolved into a career focused on creating
               intuitive, performant solutions.

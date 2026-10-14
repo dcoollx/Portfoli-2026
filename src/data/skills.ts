@@ -20,4 +20,7 @@ export const skills: skill[] = [
     category: 'Integrations & APIs',
     items: ['Zoho CRM', 'BigIn', 'Hubspot', 'Stripe API', 'Twilio API'],
   },
+  {category: 'Cloud',
+    items: ['AWS', 'S3', 'EC2', 'Lambda', 'CloudFront', 'Route 53', 'CloudFormation', 'CloudWatch'],
+  },
 ];
